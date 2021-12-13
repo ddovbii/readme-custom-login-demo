@@ -1,14 +1,18 @@
 extends layout
 
 block content
-  h1 Demo Login
+  h1 Login to Torque
   form(method='POST')
     .form-group
+      label Account
+      input.form-control(name='account' required)
+
+    .form-group
       label Email
-      input.form-control(name='email' required value='test@example.com')
+      input.form-control(name='email' required)
 
     .form-group
       label Password
-      input.form-control(name='password' type='password' required value='123456')
+      input.form-control(name='password' type='password')
 
     button.btn.btn-primary(type='submit') Login
